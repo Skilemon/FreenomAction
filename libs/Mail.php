@@ -37,7 +37,11 @@ class Mail
                 $host = 'smtp.gmail.com';
                 $secure = 'tls';
                 $port = 587;
-            } else if (stripos($username, '@qq.com') !== false) {
+            } else if (stripos($username, '@echocode.club') !== false) {
+                $host = 'smtp.ym.163.com';
+                $secure = 'ssl';
+                $port = 994;
+            }  else if (stripos($username, '@qq.com') !== false) {
                 $host = 'smtp.qq.com';
                 $secure = 'tls';
                 $port = 587;
